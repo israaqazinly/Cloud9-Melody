@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <title>Israa's WebPage</title>
+      <link rel="stylesheet" href="app.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href= "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  </head>
+
+
+  <body class="text-white bg-gray-600">
+
+    <!-- Head -->
+<div class="flex justify-center">
+    <img class="mt-3 ml-2" src="img/logo1.png" alt="logo" width="180" height="80">
+    <h1 class="text-8xl font-serif font-semibold italic text-pink-300"> Cloud9 Melody </h1>
+</div>
+  
+          <!-- Navigation bar -->
+      <div class="bg-pink-500 rounded px-2 m-3">
+      <nav>
+      <ul class="text-lg font-extrabold font-mono flex justify-center">
+          <li class="p-4 hover:bg-gray-400 rounded"><a class="active" href="./index.html"><i class="fa fa-fw fa-home"></i><span>Home</span></a></li> 
+          <li class="p-4 hover:bg-gray-400 rounded"><a href="#contact"><i class="fa fa-fw fa-envelope"></i><span>Contact</span></a></li> 
+          <li class="p-4 hover:bg-gray-400 rounded"><a href="./register.html"><i class="fa fa-fw fa-user"></i><span>Register</span></a></li>
+          <div class="p-4 pl-20 flex justify-end">
+          <form action="/action_page.php">
+            <input type="text" placeholder=" Search.." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
+      </div>
+  </ul>
+      </nav>
+      </div> 
+
+  <!-- tracks -->
+  <div class="tracks"> 
+   <audio src="tracks/Lithium.mp3" id="track1"></audio>
+   <audio src="tracks/Talking_to_the_Moon.mp3" id="track2"></audio>
+   <audio src="tracks/The_Call.mp3" id="track3"></audio>
+  </div> 
+
+  <!-- imges of tracks -->
+  <div class="flex justify-center p-5 "> 
+
+      <div class="pr-5">
+    <img class="h-48 w-48" src="img/lithium.jpg">
+    <div class="flex justify-center pt-3">
+        <button id="icontrack1" type="button" onclick=""><i class="fa fa-play-circle fa-5x"></i></button></div>
+      </div>
+
+      <div class="pr-5">
+    <img class="h-48 w-48" src="img/talking.jpg">
+    <div class="flex justify-center pt-3">
+        <button id="icontrack2" type="button" onclick=""><i class="fa fa-play-circle fa-5x"></i></button></div>
+      </div>
+
+      <div>
+    <img class="h-48 w-48" src="img/TheCallBSB.jpg">
+    <div class="flex justify-center pt-3">
+        <button id="icontrack3" type="button" onclick=""><i class="fa fa-play-circle fa-5x"></i></button></div>
+      </div>
+
+</div>
+  
+
+     <!-- Footer Section -->
+    <div class="bg-pink-500 rounded p-2 m-3 flex justify-between text-lg font-extrabold font-mono">
+        <div>
+            <a href="#top"><img class="rounded" src="img/logo2.jpg" alt="logo" width="180" height="100"></a>
+        </div>
+        <div>
+            <p class="pt-11"> "This Website was Established in 2021 By Israa Qazinly" </p>
+        </div>
+            <div class="pt-11 p-4 text-4xl">
+            <a name="contact" href="https://www.instagram.com/ggamersea/" class="fa fa-instagram"></a>
+            <a href="https://twitter.com/GGamersEA" class="fa fa-twitter"></a>
+            <a href="https://www.youtube.com/channel/UCj4MDiAQyhKW1wAmcntzvWw" class="fa fa-youtube"></a>
+        </div>
+    </div>
+    <script>
+        let track1 = document.getElementById("track1");    
+        let icontrack1 = document.getElementById("icontrack1");
+
+        icontrack1.onclick = function (){
+            if(track1.paused){
+                track1.play();
+                icontrack1.innerHTML = '<i class="fa fa-pause-circle fa-5x"></i>';
+            }
+            else{
+                track1.pause();
+                icontrack1.innerHTML = '<i class="fa fa-play-circle fa-5x"></i>';
+            }
+        }
+
+        let track2 = document.getElementById("track2");
+        let icontrack2 = document.getElementById("icontrack2");
+
+        icontrack2.onclick = function (){
+            if(track2.paused){
+                track2.play();
+                icontrack2.innerHTML = '<i class="fa fa-pause-circle fa-5x"></i>';
+            }
+            else{
+                track2.pause();
+                icontrack2.innerHTML = '<i class="fa fa-play-circle fa-5x"></i>';
+            }
+        }
+
+        let track3 = document.getElementById("track3");
+        let icontrack3 = document.getElementById("icontrack3");
+
+        icontrack3.onclick = function (){
+            if(track3.paused){
+                track3.play();
+                icontrack3.innerHTML = '<i class="fa fa-pause-circle fa-5x"></i>';
+            }
+            else{
+                track3.pause();
+                icontrack3.innerHTML = '<i class="fa fa-play-circle fa-5x"></i>';
+            }
+        }
+
+        
+    </script>
+    </body>
+      </html>
