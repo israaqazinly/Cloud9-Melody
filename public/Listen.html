@@ -78,50 +78,62 @@
             <a href="https://www.youtube.com/channel/UCj4MDiAQyhKW1wAmcntzvWw" class="fa fa-youtube"></a>
         </div>
     </div>
-    <script>
-        let track1 = document.getElementById("track1");    
+    <script>let track1 = document.getElementById("track1");    
+        let track2 = document.getElementById("track2");
+        let track3 = document.getElementById("track3");
         let icontrack1 = document.getElementById("icontrack1");
-
+        let icontrack2 = document.getElementById("icontrack2");
+        let icontrack3 = document.getElementById("icontrack3");
+        
+        function playTrack(trackNum) {
+            var track = document.getElementById("track"+String(trackNum))
+            var icontrack = document.getElementById("icontrack"+String(trackNum))
+            track.play();
+            icontrack.innerHTML = '<i class="fa fa-pause-circle fa-5x"></i>';
+            
+        }
+        
+        function pauseTrack(trackNum) {
+            var track = document.getElementById("track"+String(trackNum))
+            var icontrack = document.getElementById("icontrack"+String(trackNum))
+            track.pause();
+            icontrack.innerHTML = '<i class="fa fa-play-circle fa-5x"></i>';
+        }
+        
         icontrack1.onclick = function (){
             if(track1.paused){
-                track1.play();
-                icontrack1.innerHTML = '<i class="fa fa-pause-circle fa-5x"></i>';
+                playTrack(1);
+                pauseTrack(2);
+                pauseTrack(3);
             }
             else{
-                track1.pause();
-                icontrack1.innerHTML = '<i class="fa fa-play-circle fa-5x"></i>';
+                pauseTrack(1);
             }
         }
-
-        let track2 = document.getElementById("track2");
-        let icontrack2 = document.getElementById("icontrack2");
-
+ 
+        
         icontrack2.onclick = function (){
             if(track2.paused){
-                track2.play();
-                icontrack2.innerHTML = '<i class="fa fa-pause-circle fa-5x"></i>';
+                playTrack(2);
+                pauseTrack(1);
+                pauseTrack(3);
             }
             else{
-                track2.pause();
-                icontrack2.innerHTML = '<i class="fa fa-play-circle fa-5x"></i>';
+                pauseTrack(2);
             }
         }
-
-        let track3 = document.getElementById("track3");
-        let icontrack3 = document.getElementById("icontrack3");
-
+         
+        
         icontrack3.onclick = function (){
             if(track3.paused){
-                track3.play();
-                icontrack3.innerHTML = '<i class="fa fa-pause-circle fa-5x"></i>';
+                playTrack(3);
+                pauseTrack(1);
+                pauseTrack(2);
             }
             else{
-                track3.pause();
-                icontrack3.innerHTML = '<i class="fa fa-play-circle fa-5x"></i>';
+                pauseTrack(3);
             }
         }
-
-        
     </script>
     </body>
       </html>
