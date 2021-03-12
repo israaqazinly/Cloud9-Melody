@@ -6,79 +6,132 @@
     <link rel="stylesheet" href="app.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body class="text-white bg-gray-600">
+<body class="text-black bg-white">
         <!-- Head -->
-    <div class="flex justify-center">
-        <img class="mt-3 ml-2" src="img/logo1.png" alt="logo" width="180" height="80">
-        <h1 class="text-8xl font-serif font-semibold italic text-pink-300"> Cloud9 Melody </h1>
+    <div class="flex justify-start">
+        <img class="mt-3 ml-2 rounded" src="img/logo.JPG" alt="logo" width="180" height="80">
+        
     </div>
 
         <!-- Navigation bar -->
-    <div class="bg-pink-500 rounded px-2 m-3">
-    <nav>
+    <div class="bg-green-800 rounded px-2 m-3">
+    <nav class="flex justify-between">
     <ul class="text-lg font-extrabold font-mono flex justify-center">
-        <li class="p-4 hover:bg-gray-400 rounded"><a class="active" href="./index.html"><i class="fa fa-fw fa-home"></i><span>Home</span></a></li> 
-        <li class="p-4 hover:bg-gray-400 rounded"><a href="#contact"><i class="fa fa-fw fa-envelope"></i><span>Contact</span></a></li> 
-        <li class="p-4 hover:bg-gray-400 rounded"><a href="./register.html"><i class="fa fa-fw fa-user"></i><span>Register</span></a></li>
-        <div class="p-4 pl-20 flex justify-end">
+        <li class="p-4 hover:bg-green-900 rounded"><a class="active" href="./index.html"><i class="fa fa-fw fa-home text-white"></i><span class="text-white">Home</span></a></li> 
+        <li class="p-4 hover:bg-green-900 rounded"><a href="#contact"><i class="fa fa-fw fa-envelope text-white"></i><span class="text-white">Contact</span></a></li> 
+        <li class="p-4 hover:bg-green-900 rounded"><a href="./register.html"><i class="fa fa-fw fa-user text-white"></i><span class="text-white">Register</span></a></li>
+    </ul>
+        <div class="p-4">
         <form action="/action_page.php">
           <input type="text" placeholder=" Search.." name="search">
           <button type="submit"><i class="fa fa-search"></i></button>
         </form>
     </div>
-</ul>
+
     </nav>
     </div> 
 
 <main class="flex justify-between">
            <!-- Title, Description, and CTA -->
         <div class="pt-11">
-        <h1 class="pt-3 pl-6 text-6xl font-serif font-semibold italic underline text-yellow-400">Who we are:</h1>
-        <p class="pl-14 pt-7 text-2xl font-extralight font-serif text-yellow-100"> Welcome to Cloud9 Melody, Here you can listen, upload, and download music all the time<br>
-        don't miss the fun and enjoy with us!! </p>
+        <h1 class="pt-3 pl-6 text-6xl font-serif font-semibold italic underline text-black">Who we are:</h1>
+        <p class="pl-14 pt-7 text-2xl font-extralight font-serif text-black"> Welcome to Modey, Here you can listen, upload, and <br>download music all the time
+        don't miss the fun and enjoy with us!! <br> Register to our website to have all these features <br> by clicking on the button bellow:
+    </p>
         <div class="pt-10 flex justify-center">
-            <button class="rounded-full bg-pink-300 p-5 text-3xl shadow-xl font-serif italic hover:bg-white hover:text-pink-600 " onclick="document.location='register.html'"> Register Now </button>
+            <button class="rounded-full bg-green-800 p-5 text-3xl shadow-xl font-serif italic hover:bg-white hover:text-green-800 " onclick="document.location='register.html'"> Register Now </button>
         </div>
         </div>
         
           <!-- Hero Image -->
-       <div class="pt-3 pr-6 opacity-4">
-        <img class="rounded" src="img/hero3.png" alt="Hero Image" width="700" height="300">
-        </div>
-          
+ <div class="slideshow-container pr-7">
+
+<div class="mySlides fade">
+    <img class="p-3" src="img/1.jpeg" width="500" height="400">
+  </div>
+  
+  <div class="mySlides fade">
+    <img class="p-3" src="img/2.jpeg" width="500" height="400">
+  </div>
+  
+  <div class="mySlides fade">
+    <img class="p-3" src="img/3.jpeg" width="500" height="400">
+  </div>
+
+  <div class="mySlides fade">
+    <img class="p-3" src="img/4.jpeg" width="500" height="400">
+  </div>
+
+  <div class="mySlides fade">
+    <img class="p-3" src="img/5.jpeg" width="500" height="400">
+  </div>
+      
+<div style="text-align:center">
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span>
+    <span class="dot"></span>
+
+  </div>
 </main>
 
       <!-- Features Section -->
       <div class="pt-6 grid grid-cols-3 gap-10 ">
-    <div class="bg-gray-200 text-black text-lg font-mono rounded m-20 p-10 border-black border-8 border-opacity-80 shadow-2xl hover:bg-gray-300">
-     <a href="Listen.html"> <img class="pl-20 pb-4" src="img/listen.png" alt="Listen"></a>
-      <span class="pl-4 text-pink-600"> In this Section you can listen to music in all categories. </span>
+
+    <div class="bg-white text-lg font-mono rounded m-20 p-10 border-green-700 border-8 border-opacity-80 shadow-2xl">
+     <a class="flex" href="Listen.html"> <img class="pb-4" src="img/listen.png" alt="Listen"><span class="text-3xl pl-5">Listen: </span></a>
+      <span class="pl-4 text-black"> In this Section you can listen to music in all categories. </span>
     </div>
-    <div class="bg-gray-200 text-black text-lg font-mono rounded m-20 p-10 border-black border-8 border-opacity-80 shadow-2xl hover:bg-gray-300">
-      <img class="pl-20 pb-4" src="img/upload.png" alt="Upload">
-      <span class="pl-4  text-pink-600"> In this Section you can Upload musics. </span>
+
+    <div class="bg-white text-lg font-mono rounded m-20 p-10 border-green-700 border-8 border-opacity-80 shadow-2xl">
+      <a class="flex" href="Upload.html"> <img class="pb-4" src="img/upload.png" alt="Upload"><span class="text-3xl pl-5">Upload: </span></a>
+      <span class="pl-4  text-black"> In this Section you can Upload musics. </span>
     </div>
-    <div class="bg-gray-200 text-black text-lg font-mono rounded m-20 p-10 border-black border-8 border-opacity-80 shadow-2xl hover:bg-gray-300">
-      <img class="pl-20 pb-4" src="img/download.png" alt="Download">
-      <span class="pl-4  text-pink-600"> In this Section you can Download musics. </span>
+
+    <div class="bg-white text-lg font-mono rounded m-20 p-10 border-green-700 border-8 border-opacity-80 shadow-2xl">
+     <a class="flex" href="Download.html"> <img class="pb-4" src="img/download.png" alt="Download"><span class="text-3xl pl-5">Download: </span></a>
+      <span class="pl-4  text-black"> In this Section you can Download musics. </span>
     </div>
 </div>
 <hr>
 
      <!-- Footer Section -->
-    <div class="bg-pink-500 rounded p-2 m-3 flex justify-between text-lg font-extrabold font-mono">
+    <div class="bg-green-800 rounded p-2 m-3 flex justify-between text-lg font-extrabold font-mono">
     <div>
-        <a href="#top"><img class="rounded" src="img/logo2.jpg" alt="logo" width="180" height="100"></a>
+        <a href="#top"><img class="rounded" src="img/logo.jpg" alt="logo" width="170" height="80"></a>
     </div>
     <div>
-        <p class="pt-11"> "This Website was Established in 2021 By Israa Qazinly" </p>
+        <p class="pt-11 text-white"> "This Website was Established in 2021 By Israa Qazinly" </p>
     </div>
         <div class="pt-11 p-4 text-4xl">
-        <a name="contact" href="https://www.instagram.com/ggamersea/" class="fa fa-instagram"></a>
-        <a href="https://twitter.com/GGamersEA" class="fa fa-twitter"></a>
-        <a href="https://www.youtube.com/channel/UCj4MDiAQyhKW1wAmcntzvWw" class="fa fa-youtube"></a>
+        <a name="contact" href="https://www.instagram.com/ggamersea/" class=" text-white fa fa-instagram"></a>
+        <a href="https://twitter.com/GGamersEA" class="text-white fa fa-twitter"></a>
+        <a href="https://www.youtube.com/channel/UCj4MDiAQyhKW1wAmcntzvWw" class="text-white fa fa-youtube"></a>
     </div>
     
 </div>
+
+<script>
+    var slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 3000); // Change image every 3 seconds
+    }
+    </script>
 </body>
 </html>
