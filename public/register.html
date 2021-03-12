@@ -1,40 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-      <title>Israa's WebPage</title>
+      <title>Register Page</title>
       <link rel="stylesheet" href="app.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body class="text-black bg-white">
     <!-- Head -->
-<div class="flex justify-center">
-    <img class="mt-3 ml-2" src="img/logo1.png" alt="logo" width="180" height="80">
-    <h1 class="text-8xl font-serif font-semibold italic text-pink-300"> Cloud9 Melody </h1>
-</div>
+    <div class="flex justify-start">
+      <img class="mt-3 ml-2 rounded" src="img/logo.JPG" alt="logo" width="170" height="80">
+      
+  </div>
   
           <!-- Navigation bar -->
-      <div class="bg-pink-500 rounded px-2 m-3">
-      <nav>
+    <div class="bg-green-800 rounded px-2 m-3">
+      <nav class="flex justify-between">
       <ul class="text-lg font-extrabold font-mono flex justify-center">
-          <li class="p-4 hover:bg-gray-400 rounded"><a class="active" href="./index.html"><i class="fa fa-fw fa-home"></i><span>Home</span></a></li> 
-          <li class="p-4 hover:bg-gray-400 rounded"><a href="#contact"><i class="fa fa-fw fa-envelope"></i><span>Contact</span></a></li> 
-          <li class="p-4 hover:bg-gray-400 rounded"><a href="./register.html"><i class="fa fa-fw fa-user"></i><span>Register</span></a></li>
-          <div class="p-4 pl-20 flex justify-end">
+          <li class="p-4 hover:bg-green-900 rounded"><a class="active" href="./index.html"><i class="fa fa-fw fa-home text-white"></i><span class="text-white">Home</span></a></li> 
+          <li class="p-4 hover:bg-green-900 rounded"><a href="#contact"><i class="fa fa-fw fa-envelope text-white"></i><span class="text-white">Contact</span></a></li> 
+          <li class="p-4 hover:bg-green-900 rounded"><a href="./register.html"><i class="fa fa-fw fa-user text-white"></i><span class="text-white">Register</span></a></li>
+      </ul>
+          <div class="p-4">
           <form action="/action_page.php">
             <input type="text" placeholder=" Search.." name="search">
             <button type="submit"><i class="fa fa-search"></i></button>
           </form>
       </div>
-  </ul>
+  
       </nav>
       </div> 
     
     <!-- Registr Form -->
 
     <form action="/action_page.php">
-        <div class="bg-gray-400 grid text-yellow-400 p-8 m-20 rounded">
+        <div class="bg-gray-400 grid text-black p-8 m-20 rounded">
           <h1 class="text-2xl font-serif font-semibold italic underline">Sign Up Form</h1>
-          <p class="pt-4 text-xl font-extralight font-serif text-yellow-100">Please fill in this form to create an account.</p>
+          <p class="pt-4 text-xl font-extralight font-serif text-black">Please fill in this form to create an account.</p>
           <hr>
       
           <label class="py-3 text-xl font-mono" for="name"><b>Name</b></label>
@@ -51,25 +52,27 @@
           </label>
       
           <div class="flex justify-center">
-            <button class="rounded-full bg-pink-600 py-5 px-10 text-white text-xl shadow-xl font-serif italic hover:bg-white hover:text-pink-600 " onclick="document.location='register.html'" type="button" class="signupbtn"> Sign Up </button>
-            <button class="rounded-full bg-pink-600 py-5 px-10 text-white text-xl shadow-xl font-serif italic hover:bg-white hover:text-pink-600 " onclick="document.location='index.html'" type="button" class="cancelbtn"> Cancel </button>
+            <button class="rounded-full bg-green-800 py-5 px-10 text-white text-xl shadow-xl font-serif italic hover:bg-white hover:text-green-800  " onclick="document.location='register.html'" type="button" class="signupbtn"> Sign Up </button>
+            <button class="rounded-full bg-green-800 py-5 px-10 text-white text-xl shadow-xl font-serif italic hover:bg-white hover:text-green-800 " onclick="document.location='index.html'" type="button" class="cancelbtn"> Cancel </button>
           </div>
           </div>
         
 
      <!-- Footer Section -->
-    <div class="bg-pink-500 rounded p-2 m-3 flex justify-between text-lg font-extrabold font-mono">
+    <div class="bg-green-800 rounded p-2 m-3 flex justify-between text-lg font-extrabold font-mono">
       <div>
-          <a href="#top"><img class="rounded" src="img/logo2.jpg" alt="logo" width="180" height="100"></a>
+          <a href="#top"><img class="rounded" src="img/logo.jpg" alt="logo" width="170" height="80"></a>
       </div>
       <div>
-          <p class="pt-11"> "This Website was Established in 2021 By Israa Qazinly" </p>
+          <p class="pt-11 text-white"> "This Website was Established in 2021 By Israa Qazinly" </p>
       </div>
           <div class="pt-11 p-4 text-4xl">
-          <a name="contact" href="https://www.instagram.com/ggamersea/" class="fa fa-instagram"></a>
-          <a href="https://twitter.com/GGamersEA" class="fa fa-twitter"></a>
-          <a href="https://www.youtube.com/channel/UCj4MDiAQyhKW1wAmcntzvWw" class="fa fa-youtube"></a>
+          <a name="contact" href="https://www.instagram.com/ggamersea/" class=" text-white fa fa-instagram"></a>
+          <a href="https://twitter.com/GGamersEA" class="text-white fa fa-twitter"></a>
+          <a href="https://www.youtube.com/channel/UCj4MDiAQyhKW1wAmcntzvWw" class="text-white fa fa-youtube"></a>
       </div>
+      
   </div>
+  
   </body>
     </html>
